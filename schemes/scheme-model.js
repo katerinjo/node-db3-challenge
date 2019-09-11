@@ -20,7 +20,11 @@ function add(scheme) {
   return db('schemes').insert(scheme);
 }
 
-function update(changes, id) {}
+function update(changes, id) {
+  return db('schemes')
+    .where({ id })
+    .update(changes);
+}
 
 function remove(id) {}
 
