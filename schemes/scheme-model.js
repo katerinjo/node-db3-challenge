@@ -1,4 +1,8 @@
-function find() {}
+db = require('../data/db');
+
+function find() {
+  return db('schemes');
+}
 
 function findById(id) {}
 
