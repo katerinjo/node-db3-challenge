@@ -16,7 +16,9 @@ function findSteps(id) {
     .orderBy('st.step_number');
 }
 
-function add(scheme) {}
+function add(scheme) {
+  return db('schemes').insert(scheme);
+}
 
 function update(changes, id) {}
 
